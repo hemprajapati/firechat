@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "./base.css";
+
+.word-erp {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.error-msg {
+  @apply text-red-600 font-medium my-1 block text-sm ms-2;
+}
+
+.form-field {
+  @apply bg-gray-50 border border-gray-300/80 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5 placeholder:font-semibold;
+}
+a {
+  @apply text-indigo-900 font-semibold;
+}
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.slide-up-enter-to,
+.slide-up-leave-from {
+  transform: translateY(0);
+  opacity: 1;
+}
+
