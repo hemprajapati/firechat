@@ -118,7 +118,6 @@ const onSubmit = async (values) => {
       await router.push("/chat");
     }
   } catch (e) {
-    console.log(e);
     if (e) {
       error.value = true
     errorMessage.value = e.code.split("/")[1]

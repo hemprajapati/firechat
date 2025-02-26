@@ -68,8 +68,6 @@ const onSubmit = async (values) => {
   try {
     loading.value = true;
     const data = await signIn(email, password); 
-    console.log("data",data);
-    
     if (data.user) {
       await router.push("/chat");
     }

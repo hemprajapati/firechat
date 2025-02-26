@@ -59,8 +59,5 @@ export const getLoginUser = async () => {
   const user = usersSnapshot.docs.length > 0
   ? usersSnapshot.docs[0].data()
   : null;
-
-  console.log("user",user);
-  
   return {user};
 };

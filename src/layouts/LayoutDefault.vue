@@ -1,13 +1,9 @@
 <template>
-        <div class="w-full">
-                <slot/>
-        </div>
+  <div class="w-full">
+    <slot />
+  </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

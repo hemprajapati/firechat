@@ -155,7 +155,6 @@ onMounted(() => {
     loading.value = false;
     users.value.forEach((user) => {
       listenForNewMessages(user.id, handleNewMessage);
-      // Listen for real-time updates to the user's online status
       onSnapshot(doc(db, "users", user.id), (doc) => {
         const userData = doc.data();
         if (userData) {

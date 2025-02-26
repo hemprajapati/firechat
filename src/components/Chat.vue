@@ -88,9 +88,8 @@ const chatMessages = ref([]);
 const scrollToBottom = () => {
   nextTick(() => {
     chatContainer.value.scrollTop = chatContainer.value.scrollHeight;
-    notification.value =false;
+    notification.value = false;
   });
-  // notification.value = false;
 };
 
 const fetchAndSetMessages = async (userId) => {
